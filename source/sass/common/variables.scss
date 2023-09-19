@@ -1,0 +1,23 @@
+// Colors
+$white: #ffffff;
+$accent: #d22856;
+$blue: #283645;
+$gray: #f2f2f2;
+$black: #000000;
+
+
+// Viewports
+$mobile-width-only: 659px;
+// @media (min-width: $mobile-width-only)
+$tablet-width: 660px;
+// @media (min-width: $tablet-width)
+$desktop-width: 1200px;
+// @media (min-width: $desktop-width)
+
+$retina: 2dppx;
+// @media (min-resolution: $retina)
+
+$mobile-side-offset: 20px;
+$container-max-width: 940px + 2 * $mobile-side-offset;
+
+// font-size:calc(12px + 8 * (100vw - 320px) / 880);

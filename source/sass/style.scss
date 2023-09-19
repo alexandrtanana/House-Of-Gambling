@@ -1,0 +1,23 @@
+// common
+@import "common/fonts.scss";
+@import "common/variables.scss";
+@import "common/mixins.scss";
+
+// // blocks
+@import "blocks/body.scss";
+// @import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/authentication.scss";
+@import "blocks/main.scss";
+@import "blocks/hog.scss";
+@import "blocks/animate.scss";
+@import "blocks/blog.scss";
+@import "blocks/footer.scss";
+@import "blocks/indewelopment.scss";
+@import "blocks/login.scss";
+@import "blocks/register.scss";
+@import "blocks/partner.scss";
+
+//Global
+@import "global/reset";
+@import "global/normalize";

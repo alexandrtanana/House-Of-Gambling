@@ -1,0 +1,75 @@
+/* Стили для затемнения заднего фона */
+.register-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b3;
+}
+
+/* Стили для попапа */
+.register-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: none;
+  width: 80%;/* Ширина попапа на мобильных устройствах */
+  max-width: 400px;/* Максимальная ширина попапа на десктопе */
+  padding: 20px;
+  background-color: #110a1d;
+  border: 2px solid #007bff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #00000080;
+  transform: translate(-50%, -50%);
+}
+
+/* Стили для кнопки закрытия */
+.register-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Стили для заголовка попапа */
+.register-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Стили для формы */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+/* Стили для полей ввода в форме */
+.register-input {
+  // width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Стили для кнопки отправки формы */
+.register-submit-button {
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #110a1d;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+}
+
+.register-submit-button:hover {
+  background-color: #0056b3;
+}

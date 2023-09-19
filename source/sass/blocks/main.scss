@@ -1,0 +1,13 @@
+.main {
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1130px) {
+    flex-direction: column;
+  }
+}

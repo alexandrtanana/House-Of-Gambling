@@ -1,0 +1,72 @@
+/* Стили для попапа "Стать партнёром" */
+.partner-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  display: none;
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #110a1d;
+  border: 2px solid #007bff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #00000080;
+  transform: translate(-50%, -50%);
+}
+
+.partner-popup-content {
+  text-align: center;
+}
+
+.partner-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.partner-title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.partner-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+}
+
+/* Стили для формы */
+.partner-input,
+.partner-textarea {
+  // width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.partner-button {
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #110a1d;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+}
+
+.partner-button:hover {
+  background-color: #0056b3;
+}

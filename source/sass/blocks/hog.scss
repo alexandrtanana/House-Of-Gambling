@@ -1,0 +1,126 @@
+.hog {
+  display: flex;
+  flex-direction: column;
+  max-width: 680px;
+  margin-top: 304px;
+  margin-bottom: 354px;
+
+  @media (max-width: 1500px) {
+    max-width: 300px;
+  }
+
+  @media (max-width: 1130px) {
+    margin-top: 70px;
+    margin-bottom: 122px;
+  }
+}
+
+.hog__name {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 96px;
+  text-transform: uppercase;
+
+  @media (max-width: 1873px) {
+    font-size: 70px;
+    line-height: 72px;
+  }
+
+  @media (max-width: 1500px) {
+    font-size: 46px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 1130px) {
+    text-align: center;
+  }
+
+  @media (max-width: 450px) {
+    align-items: center;
+    margin-bottom: 12px;
+  }
+}
+
+.hog__name span {
+  color: #478bf9;
+}
+
+.hog__desc {
+  margin-bottom: 48px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #fff9;
+
+  @media (max-width: 1873px) {
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  @media (max-width: 1500px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (max-width: 1130px) {
+    text-align: center;
+  }
+
+  @media (max-width: 450px) {
+    margin-bottom: 22px;
+  }
+}
+
+.hog__desc span {
+  text-transform: uppercase;
+}
+
+.hog__link {
+  max-width: 249px;
+  padding-top: 20px;
+  padding-right: 72px;
+  padding-bottom: 20px;
+  padding-left: 72px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #478df9;
+  border-radius: 48px;
+  transition: background-color 0.3s ease;
+
+  @media (max-width: 1873px) {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  @media (max-width: 1500px) {
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  @media (max-width: 1130px) {
+    width: 100%;
+  }
+
+  @media (max-width: 450px) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.hog__link:hover {
+  color: #478bf9;
+  background-color: #fff;
+  transition: color 0.5s ease;
+}

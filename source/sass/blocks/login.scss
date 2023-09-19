@@ -1,0 +1,81 @@
+/* Стили для overlay (затемненного фона) */
+.login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;/* Устанавливаем z-index выше остальных элементов */
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;/* Чтобы создать полупрозрачный фон */
+}
+
+/* Стили для попапа */
+.login-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1001; /* Устанавливаем z-index выше overlay */
+  display: none;
+  padding: 30px;
+  background-color: #110a1d;
+  border: 2px solid #007bff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #0003;/* Добавляем тень для попапа */
+  transform: translate(-50%, -50%);/* Центрируем попап по центру экрана */
+}
+
+/* Стили для кнопки закрытия */
+.login-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Стили для заголовка */
+.login-title {
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Стили для формы */
+.login-form {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+
+  @media (max-width: 1140px) {
+    flex-direction: column;
+  }
+}
+
+.login-input[type="text"],
+.login-input[type="password"] {
+  // width: 100%;
+  padding: 10px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  @media (max-width: 1140px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* Стили для кнопки входа */
+.login-enter[type="submit"] {
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #110a1d;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+}
+
+.login-enter[type="submit"]:hover {
+  background-color: #0056b3;
+}
